@@ -1,7 +1,18 @@
+html{
+	scroll-behavior: smooth;
+}
 body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 17px;
 	margin: 0;
+	overflow-x: hidden;
+}
+section{
+	min-height: 100vh;
+	margin-bottom: 50px;
+}
+section#contact{
+	margin-bottom: 0;
 }
 header nav{
 	display: flex;
@@ -75,6 +86,7 @@ main section#overview .destination h1 span{
 main section#overview .destination p.description{
 	margin-top: -50px;
 	color: grey;
+	text-align: justify;
 }
 main section#overview .destination .destination_popular{
 	margin-top: 30px;
@@ -176,6 +188,148 @@ main section#overview div.destination_search .destination_data form button img{
 	height: 20px;
 }
 
+main section#overview div.destination_search .destination_data form button:active{
+	background-color: #357CE7;
+}
+section#features{
+	margin-top: -100px;
+	box-sizing: border-box;
+	padding: 40px;
+}
+section#features .features_overview .features_desc{
+	width: 50%;
+	margin-bottom: 60px;
+}
+section#features .features_overview h1{
+	font-family: Lora;
+	font-size: 40px;
+	color: #35455e;
+}
+section#features .features_overview p{
+	color: grey;
+	font-size: 18px;
+}
+section#features .features_overview .features_card{
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+section#features .features_overview .features_card .card{
+	width: 250px;
+	height: 250px;
+	margin-top: 40px;
+	background-color: #fff6d7;
+	box-sizing: border-box;
+	padding: 40px; 
+}
+section#features .features_overview .features_card .card img{
+	position: relative;
+	width: 80px;
+	bottom: 80px;
+}
+section#features .features_overview .features_card .card h2{
+	font-family: Lora;
+	color: #35455e;
+	margin-top: -60px;
+}
+section#features .features_overview .features_card .card.two{
+	background-color:#ebdcf9;
+ 
+}
+section#features .features_overview .features_card .card.three{
+	background-color: #ddf6fd;
+}
+section#features .features_overview .features_card .card.four{
+	background-color: #dcf7e8;
+}
+section#about{
+	margin-top: 150px;
+}
+section#about .grey-box{
+	width: 550px;
+	height: 550px;
+	background-color: #f3effe;
+	margin: -70px auto;
+	border-radius: 20px;
+}
+section#about .white-box{
+	text-align: center;
+	width: 400px;
+	position: absolute;
+	top: 1650px;
+	left: 200px;
+	border-radius: 20px;
+	background-color: white;
+	height: 400px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+section#about .white-box h1{
+	font-family: Lora;
+	color: #6fa8ff;
+}
+section#about .about_destinesia{
+	position: absolute;
+	right: 150px;
+	top: 1670px;
+	width: 500px;
+	font-size: 25px;
+	color: #35455e;
+	font-family: Lora;
+}
+section#about .about_destinesia h1 span{
+	color: #357CE7;
+}
+section#about .about_destinesia p{
+	text-align: justify;
+	font-size: 18px;
+	font-family: Roboto;
+}
+section#contact{
+	background-color: #35455e;
+	box-sizing: border-box;
+	padding: 80px;
+	height: 100vh;
+}
+section#contact .contact_me{
+	width: 40%;
+}
+section#contact h1{
+	font-family: Lora;
+	color: white;
+	font-size: 50px;
+}
+section#contact p{
+	font-family: Roboto;
+	font-size: 20px;
+	color: #cae2ea;
+	text-align: justify;
+}
+section#contact .destinesia_logo{
+	margin-top: 180px;
+	display: flex;
+}
+section#contact .destinesia_logo h3{
+	font-family: Lora;
+	color: #6fa8ff;
+}
+section#contact .navigate,section#contact .social_media{
+	position: relative;
+	left: 700px;
+	bottom: 400px;
+}
+section#contact .navigate li,section#contact .social_media li{
+	list-style: none;
+	margin-bottom: 50px;
+}
+section#contact .navigate a,section#contact .social_media a{
+	text-decoration: none;
+	font-size: 30px;
+	color: #cae2ea;
+}
+section#contact .social_media{
+	top: -790px;
+	left: 1000px;
+}
 /*ANIMASI*/
 
 main section#overview .destination .popular_overview .card:hover{
@@ -190,6 +344,9 @@ header nav ul li button.signup:active{
 header nav ul li button.profile:active{
 	opacity: 0.8;
 }
-main section#overview div.destination_search .destination_data form button:active{
-	background-color: #357CE7;
+section#contact .navigate a:hover{
+	color: white;
+}
+section#contact div.social_media img:hover{
+	transform: scale(1.1);
 }
