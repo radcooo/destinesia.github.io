@@ -293,6 +293,12 @@ section#contact{
 section#contact .contact_me{
 	width: 40%;
 }
+section#contact .contact_me a{
+	font-family: Roboto;
+	font-size: 20px;
+	color: #cae2ea;
+	font-weight: bold;
+}
 section#contact h1{
 	font-family: Lora;
 	color: white;
