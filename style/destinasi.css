@@ -72,12 +72,14 @@ section iframe{
 }
 section.destination_profile{
 	display: flex;
+	height: 500px;
 }
 section div.article{
 	box-sizing: border-box;
 	padding: 30px;
 	padding-left: 45px;
 	flex: 1;
+	overflow: scroll;
 }
 section div.article h1{
 	font-size: 40px;
@@ -85,6 +87,10 @@ section div.article h1{
 	font-family: Lora;
 }
 section div.article p{
+	color: grey;
+	text-align: justify;
+}
+section div.article li{
 	color: grey;
 	text-align: justify;
 }
@@ -207,11 +213,12 @@ section.culinary .culinary_cards .culinary_card img{
 	transition: 0.5s;
 }
 section.culinary .culinary_cards .culinary_card p{
-	margin-top: -230px;
+	margin: -270px auto;
 	color: white;
 	transition: 0.5s;
 	opacity: 0;
 	font-weight: bold;
+	text-align: justify;
 }
 section.culinary .culinary_cards .culinary_card:hover{
 	background-color: #6fa8ff;
